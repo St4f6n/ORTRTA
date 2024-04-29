@@ -1,0 +1,306 @@
+/* Tags */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+br.line {
+  background-color: #e6ad47;
+  width: auto; /* Width of each line */
+  height: 1px; /* Height of each line */
+}
+body {
+  background-image: url("Homepgelottbackground.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 15px;
+  margin: 0px 15px
+}
+
+p {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #e6ad47;
+  word-break: break-all;
+  white-space: normal;
+}
+
+li {
+  display: inline;
+  float: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+    padding: 10px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Link styles */
+a {
+  color: #f6af38; 
+}
+
+a:link, a:visited {
+  color: #e6ad47;
+  border: 2px solid #e6ad47;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+/* Classen */
+.links {
+  text-align: left;
+}
+
+table.mitte {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: auto;
+}
+
+table.test {
+  width: auto;
+}
+
+.mitte {
+  text-align: center;
+  align-content: center;
+}
+
+.rechts {
+  text-align: right;
+}
+
+.bilbo {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #e6ad47;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.aside {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mobile img {
+  max-width: 100%; /* Set the maximum width of the image to 100% */
+  height: auto; /* Maintain aspect ratio */
+  display: none; /* Hide the mobile div by default */
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.image-container {
+  flex: 1; 
+  margin-right: 20px; /* Add space between the image and text */
+}
+
+.text-container {
+  flex: 1; /* Make this container grow to fill remaining space */
+  padding: 0 10px;
+}
+
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+/* CSS styles for the burger menu */
+.burger-icon {
+  display: block; /* Ensures it's a block-level element */
+  cursor: pointer; /* Shows it's clickable */
+}
+
+.line {
+  width: 30px; /* Width of each line */
+  height: 4px; /* Height of each line */
+  background-color: #333; /* Color of each line */
+  margin: 6px 0; /* Spacing between lines */
+}
+
+/* Styles for the navigation menu */
+.nav-menu {
+  display: none; /* Use flexbox layout */
+  justify-content: flex-end; /* Move items to the end (right) of the container */
+}
+
+.nav-menu ul {
+  list-style-type: none;
+}
+
+.nav-menu ul li {
+  margin-left: 20px; /* Add some spacing between menu items */
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.team-descriptors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 200px; /* Breite jedes Teammitglieds */
+  margin: 10px; /* Abstand zwischen den Teammitgliedern */
+  text-align: center;
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 50% 50%; /* Make the pictures oval*/
+  height: auto;
+}
+
+.team-member p {
+  margin-top: 5px; /* Abstand zwischen Bild und Text */
+}
+
+/* Tablet and desktop styles */
+@media only screen and (min-width: 768px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .tbkg {
+        background-image: url('Homepgelott.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mitte {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .mitte td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group label {
+      flex: 0 0 120px; /* Festlegen der Breite des Labels auf 120px */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      flex: 1; /* Flexibles Wachstum des Eingabefelds */
+      margin-left: 10px; /* Abstand zwischen Label und Eingabefeld */
+    }
+
+    .message textarea {
+      height: 100px; /* Höhe des Texteingabefelds für Nachrichten erhöhen */
+    }
+
+    .desktop img {
+      max-width: 50%; /* Set the maximum width of the image to 80% */
+      height: auto;
+  }
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    .row {
+        display: none; /* Hide the table row on mobile devices */
+    }
+
+    .mobile img {
+        display: block; /* Show the image on mobile devices */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-top: 20px;
+    }
+  
+  .image-with-text {
+      flex-direction: column; /* Change flex direction to column */
+  }
+
+  .image-container {
+      margin-bottom: 20px; /* Add space between image and text */
+  }
+}
